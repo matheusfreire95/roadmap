@@ -1,0 +1,91 @@
+{% load static %}
+
+<!-- Footer -->
+<footer>
+    <div class="border-y border-default-200">
+        <div class="container py-20">
+            <div class="grid xl:grid-cols-3 md:grid-cols-3 gap-10 lg:gap-16">
+                <div class="">
+                    <div>
+                        <a href="#">
+                            <img src="{% static 'assets/roadmap_logo.png' %}" alt="logo" class="h-10 flex dark:hidden">
+                            <img src="{% static 'assets/roadmap_logo_dark.png' %}" alt="logo" class="h-10 hidden dark:flex">
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <img src="{% static 'assets/qrcode_wpp.jpg' %}" class="rounded-md border border-default-200 text-default-950 bg-white/5 mx-2 flex items-center justify-center">
+                    </div>
+                </div><!-- col End -->
+
+                <div class="">
+                    <ul class="flex flex-col gap-3">
+                        <h5 class="xl:text-xl lg:text-lg font-medium text-default-800 mb-2">Company</h5>
+                        <li>
+                            <a href="#about" class="text-base text-default-700 hover:text-default-950 transition-all">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-base text-default-700 hover:text-default-950 transition-all">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="text-base text-default-700 hover:text-default-950 transition-all">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-base text-default-700 hover:text-default-950 transition-all">Contato</a>
+                        </li>
+                    </ul>
+                </div><!-- col End -->
+
+                <div class="">
+                    <ul class="flex flex-col gap-3">
+                        <h5 class="xl:text-xl lg:text-lg font-medium text-default-800 mb-2">Social Media</h5>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-5 group">
+                                <a href="https://www.facebook.com/roadmapassessoria/" class="h-10 w-10 inline-flex items-center justify-center border border-default-300 text-default-800 rounded-lg transition-all duration-700 group-hover:bg-primary group-hover:text-white group-hover:border-primary" target="_blank"><i data-lucide="facebook" class="h-5 w-5"></i></a>
+                                <h5 class="text-base font-medium text-default-800">Facebook</h5>
+                            </li>
+                            <li class="flex items-center gap-5 group">
+                                <a href="https://www.instagram.com/roadmapassessoria/" class="h-10 w-10 inline-flex items-center justify-center border border-default-300 text-default-800 rounded-lg transition-all duration-700 group-hover:bg-primary group-hover:text-white group-hover:border-primary" target="_blank"><i data-lucide="instagram" class="h-5 w-5"></i></a>
+                                <h5 class="text-base font-medium text-default-800">Instagram</h5>
+                            </li>
+                            <li class="flex items-center gap-5 group">
+                                <a href="https://www.linkedin.com/company/roadmap-assessoria/" class="h-10 w-10 inline-flex items-center justify-center border border-default-300 text-default-800 rounded-lg transition-all duration-700 group-hover:bg-primary group-hover:text-white group-hover:border-primary" target="_blank"><i data-lucide="linkedin" class="h-5 w-5"></i></a>
+                                <h5 class="text-base font-medium text-default-800">Linkedin</h5>
+                            </li>
+                        </ul>
+                    </ul>
+                </div><!-- col End -->
+
+            </div><!-- grid End -->
+        </div><!-- Container End -->
+    </div>
+
+    <div class="py-4">
+        <div class="container flex flex-wrap justify-center items-center h-full md:justify-between text-center md:text-start">
+            <p class="text-base font-medium text-default-800">
+                <script>document.write(new Date().getFullYear())</script>
+                © RoadMap Assessoria
+            </p>
+            <p class="text-base font-medium text-default-800">
+                <a href="#">Terms Conditions & Policy</a>
+            </p>
+        </div><!-- Flex End -->
+    </div>
+</footer>
+
+<div class="fixed bottom-5 end-5 flex flex-col gap-1 items-center z-[1000]">
+    <!-- Back to Top -->
+    <button class="h-10 w-10 bg-primary/20 backdrop-blur-3xl rounded-full text-primary flex justify-center items-center transition-all duration-500 translate-x-16 shadow-[inset_0px_0px_12px_0px] shadow-primary/40 z-10 " data-toggle="back-to-top">
+        <i class="h-4 w-4" data-lucide="chevron-up"></i>
+    </button>
+    
+    <!-- Light/Dark Toggle -->
+    <button class="bg-primary text-white rounded-lg z-20">
+        <span class="h-9 w-9 flex justify-center items-center"  id="light-theme">
+            <i class="h-5 w-5" data-lucide="moon"></i>
+        </span>
+        <span class="h-9 w-9 flex justify-center items-center" id="dark-theme">
+            <i class="h-5 w-5" data-lucide="sun"></i>
+        </span>
+    </button>
+</div>

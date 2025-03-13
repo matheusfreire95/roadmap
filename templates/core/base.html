@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Roadmap Assessoria</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Tailwind CSS Saas & Software Landing Page Template, Portfolio, business, clean, modern, multipurpose, tailwind css." name="description" />
+        <meta content="coderthemes" name="author" />
+        
+        <!-- Theme favicon -->
+        <link rel="shortcut icon" href="{% static 'assets/roadmap_icon.ico' %}">
+        <!--  Head js -->
+        
+        <script type="module" src="{% static 'assets/theme-595fb5d7.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'assets/theme-eddc8f47.css' %}">
+    </head>
+
+    <body>
+        {% include 'core/partials/_header.html' %}
+
+        {% block content %}{% endblock %}
+
+        {% include 'core/partials/_footer.html' %}
+    </body>
+</html>
